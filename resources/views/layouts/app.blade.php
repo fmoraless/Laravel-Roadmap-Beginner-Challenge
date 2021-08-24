@@ -31,7 +31,9 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    @guest
                     <!-- Left Side Of Navbar -->
+                    @else
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Articles <span class="sr-only">(current)</span></a>
@@ -40,9 +42,14 @@
                             <a class="nav-link" href="#">New Article</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="{{route('categories.index')}}">Categories</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">About me</a>
                         </li>
                     </ul>
+                    @endguest
+
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
