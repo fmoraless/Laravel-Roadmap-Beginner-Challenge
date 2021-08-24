@@ -13,6 +13,7 @@
                                 <div class="form-group">
                                     <label for="name">Category name</label>
                                     <input type="text" class="form-control" id="name" name="name" placeholder="ej.: Tools">
+                                    @error('name') <span class="text-danger er">{{ $message }}</span>@enderror
                                 </div>
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </form>

@@ -14,6 +14,7 @@
                                 <div class="form-group">
                                     <label for="name">Category name</label>
                                     <input type="text" class="form-control" id="name" name="name" value="{{$category->name}}">
+                                    @error('name') <span class="text-danger er">{{ $message }}</span>@enderror
                                 </div>
                                 <button type="submit" class="btn btn-primary">Update</button>
                             </form>
